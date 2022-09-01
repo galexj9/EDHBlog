@@ -14,9 +14,16 @@
     height: 100%;
 }
 
-.flex-container>div {
-    margin: 1%;
-    padding: 3%;
+.blog-header>h1 {
+    margin: 0px;
+}
+
+.blog-header>h3 {
+    margin: 0px;
+}
+
+.blog-header>h4 {
+    margin: 0px;
 }
 
 .slide {
