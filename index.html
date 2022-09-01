@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="fullpage.js"></script>
+</head>
+
+<div id="fullpage">
+    <!-- Homepage -->
+    <div class="section active" id="section0">
+        <div class="flex-container">
+            <div style="margin:1%">
+                <img id="profile" src="profile-pic.jpg" alt="Garrett Alexander profile picture" width="400">
+                <p>galexj9@gmail.com</p>
+            </div>
+            <div>
+                <h1>Garrett Alexander</h1>
+                <p>I'm a student at the University of Oklahoma studying computer science and math.</p>
+                <p>I graduate May 2023, and I'm currently looking for new opportunities to continue my education.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="section" id="section1">
+        <div class="slide">
+            <h1>Personal Projects</h1>
+        </div>
+        <!-- Fireworks -->
+        <div class="slide">
+            <div class="flex-container" style="width:100%; height:100%">
+                <div style="margin: 2%">
+                    <h2>Fireworks</h2>
+                </div>
+                <div class="jswidget">
+                    <object type="text/html" data="../JavaScript/Fireworks/index.html" class="jswidget">
+                    </object>
+                </div>
+            </div>
+        </div>
+        <!-- Orbits -->
+        <div class="slide active">
+            <div class="flex-container" style="width:100%; height:100%">
+                <div style="margin: 2%">
+                    <h2>Orbits</h2>
+                </div>
+                <div class="jswidget">
+                    <object type="text/html" data="../JavaScript/Orbits/index.html" class="jswidget">
+                    </object>
+                </div>
+            </div>
+        </div>
+        <!-- Life -->
+        <div class="slide">
+            <div class="flex-container" style="width:100%; height:100%">
+                <div style="margin: 2%">
+                    <h2>Conway's Game of Life</h2>
+                </div>
+                <div class="jswidget">
+                    <object type="text/html" data="../JavaScript/Life/index.html" class="jswidget">
+                    </object>
+                </div>
+            </div>
+        </div>
+        <!-- Boidos -->
+        <div class="slide">
+            <div class="flex-container" style="width:100%; height:100%">
+                <div style="margin: 2%">
+                    <h2>Boids</h2>
+                </div>
+                <div class="jswidget">
+                    <object type="text/html" data="../JavaScript/Boidos/index.html" class="jswidget">
+                    </object>
+                </div>
+            </div>
+        </div>
+        <!-- Lyric Grid -->
+        <div class="slide">
+            <div class="flex-container" style="width:100%; height:100%">
+                <div style="margin: 2%">
+                    <h2>Lyric/Sheet Music Grid</h2>
+                </div>
+                <div class="jswidget">
+                    <object type="text/html" data="../JavaScript/LyricAndNoteGrid/index.html" class="jswidget">
+                    </object>
+                </div>
+            </div>
+        </div>
+        <!-- Smart rockets -->
+        <div class="slide">
+            <div class="flex-container" style="width:100%; height:100%">
+                <div style="margin: 2%">
+                    <h2>Smart Rockets</h2>
+                </div>
+                <div class="jswidget">
+                    <object type="text/html" data="../JavaScript/SmartRockets/index.html" class="jswidget">
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="section2">
+        <div class="slide">
+            <h1>Class Projects</h1>
+        </div>
+    </div>
+
+    <div class="section" id="section3">
+        <div class="flex-container">
+            <div>
+                <h1>Resume</h1>
+            </div>
+            <div>
+                <img src="./resume.svg" alt="Resume" width="130%" height="130%"></img>
+            </div>
+        </div>
+    </div>
+
+    <!-- Attributes -->
+    <div class="section fp-auto-height" id="section6">
+        <ul>
+            <li>Website designed with <a href="https://alvarotrigo.com/fullPage/">Fullpage.js</a></li>
+            <li>Programming projects made with <a href="https://p5js.org">p5.js</a> and inspired by <a
+                    href="https://thecodingtrain.com/">Daniel Shiffman</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        autoScrolling: true,
+        fitToSection: true,
+        slidesNavigation: true,
+        scrollOverflow: true,
+        lazyLoading: true,
+        licenseKey: 'Y3BK9-5O72I-I13KK-GF6JK-BVMQO'
+    });
+</script>
+</body>
+
+</html>
