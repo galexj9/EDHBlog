@@ -1,4 +1,9 @@
-function randomColor() {
+function randomColorBackground(element) {
     var color = '#' + Math.floor(Math.random()*16777215).toString(16);
-    document.getElementById("color-button").style.backgroundColor = color;
+    document.getElementById(element).style.backgroundColor = color;
+  }
+
+  function randomColorBorder(element) {
+    var color = '#' + Math.floor(Math.random()*16777215).toString(16);
+    document.getElementById(element).style.borderColor = color;
   }

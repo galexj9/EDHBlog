@@ -29,7 +29,8 @@
         <div class="flex-container" style="position: absolute;">
             <!-- profile pic and info -->
             <div style="margin:1%; text-align: center;">
-                <img id="profile" src="profile-pic.jpg" alt="Garrett Alexander profile picture" width="400">
+                <img id="profile" src="profile-pic.jpg" onclick="randomColorBorder('profile')"
+                    alt="Garrett Alexander profile picture" width="400">
                 <p>Garrett Alexander</p>
                 <p>Garrett.J.Alexander-1@ou.edu</p>
                 <p>Undergraduate Computer Science Student at OU </p>
@@ -52,7 +53,7 @@
 
                 <!-- color changing button -->
                 <div class="flex-container" style="justify-content: center;">
-                    <button id="color-button" onclick="randomColor()">Click me!</button>
+                    <button id="color-button" onclick="randomColorBackground('color-button')">Click me!</button>
                 </div>
             </div>
         </div>
@@ -277,11 +278,13 @@
             </div>
             <div class="flex-container">
                 <div class="container">
-                    <img class="blog-img" style="width: 300px;" src="" alt="">
-                    <p></p>
+                    <iframe src="https://giphy.com/embed/TAdayXZ1EB9kc" frameBorder="0"></iframe>
+                    <p><a href="https://giphy.com/gifs/dragon-fantasy-skyrim-TAdayXZ1EB9kc">Skyrim player standing off
+                            with dragon, via GIPHY</a></p>
                 </div>
                 <div class="container">
                     <p>
+
                     </p>
                 </div>
             </div>
