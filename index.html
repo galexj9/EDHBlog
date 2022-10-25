@@ -5,18 +5,37 @@
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="fullpage.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <div id="fullpage">
     <!-- Homepage -->
     <div class="section active" id="section0" data-anchor="homepage">
-        <div class="flex-container">
+
+
+        <div class="flex-container" style="position: absolute; height:150px; top:0px;">
+            <!-- sun gif -->
+            <img src="./sun.gif" alt="sun-gif" style="width: 150px;" /></a>
+
+            <div class="flex-container" style="justify-content: center;">
+                <!-- under construction gif -->
+                <a href="https://www.animatedimages.org/cat-under-construction-695.htm"><img
+                        src="https://www.animatedimages.org/data/media/695/animated-under-construction-image-0017.gif"
+                        alt="animated-under-construction-image-0017" /></a>
+
+            </div>
+        </div>
+
+        <div class="flex-container" style="position: absolute;">
+            <!-- profile pic and info -->
             <div style="margin:1%; text-align: center;">
                 <img id="profile" src="profile-pic.jpg" alt="Garrett Alexander profile picture" width="400">
                 <p>Garrett Alexander</p>
                 <p>Garrett.J.Alexander-1@ou.edu</p>
                 <p>Undergraduate Computer Science Student at OU </p>
             </div>
+
+            <!-- Blog description -->
             <div>
                 <h1>Exploring Digital History Blog</h1>
                 <h3>HIST 3523</h3>
@@ -24,11 +43,23 @@
                     Professor Pandora's Exploring Digital History class.
                 </p>
             </div>
+
+            <!-- gifs to right of description -->
+            <div class="container">
+                <!-- plant gifs -->
+                <a href="http://clipart-library.com/clipart/gierLr4id.htm"><img
+                        src="http://clipart-library.com/images/gierLr4id.gif" width="192" height="120" /></a>
+
+                <!-- color changing button -->
+                <div class="flex-container" style="justify-content: center;">
+                    <button id="color-button" onclick="randomColor()">Click me!</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Blog Post #1 -->
-    <div class="section" id="section1" data-anchor="firstpage">
+    <div class="section" id="section1" data-anchor="darkmatter">
         <div class="container">
             <div class="blog-header">
                 <h1>"Dark Matter"</h1>
@@ -114,7 +145,7 @@
     </div>
 
     <!-- Blog Post #2 -->
-    <div class="section" id="section2" data-anchor="secondpage">
+    <div class="section" id="section2" data-anchor="blackboxes">
         <div class="container">
             <div class="blog-header">
                 <h1>Black boxes</h1>
@@ -187,7 +218,7 @@
     </div>
 
     <!-- Blog Post #3 -->
-    <div class="section" id="section3" data-anchor="thirdpage">
+    <div class="section" id="section3" data-anchor="worldsfair">
         <div class="container">
 
             <div class="blog-header">
@@ -195,7 +226,7 @@
                 <h4>10/11/22</h4>
             </div>
             <div class="flex-container">
-                <div class="container" style="width: 334px;">
+                <div class="container">
                     <img class="blog-img" style="width: 300px;" src="./vanguard1.jpg" alt="Vanguard I">
                     <p>Earth's first man-made satellite</p>
                 </div>
@@ -237,8 +268,48 @@
         </div>
     </div>
 
+    <!-- Blog Post #4 -->
+    <div class="section" id="section4" data-anchor="videogames">
+        <div class="container">
+            <div class="blog-header">
+                <h1>Videogames</h1>
+                <h4>10/28/22</h4>
+            </div>
+            <div class="flex-container">
+                <div class="container">
+                    <img class="blog-img" style="width: 300px;" src="" alt="">
+                    <p></p>
+                </div>
+                <div class="container">
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Post #5 -->
+    <div class="section" id="section5" data-anchor="fifthpage">
+        <div class="container">
+            <div class="blog-header">
+                <h1></h1>
+                <h4></h4>
+            </div>
+            <div class="flex-container">
+                <div class="container">
+                    <img class="blog-img" style="width: 300px;" src="" alt="">
+                    <p></p>
+                </div>
+                <div class="container">
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Attributes -->
-    <div class="section fp-auto-height" id="section6">
+    <div class="section fp-auto-height" id="section6" data-anchor="attributes">
         <ul>
             <li>Website designed with <a href="https://alvarotrigo.com/fullPage/">Fullpage.js</a></li>
         </ul>
@@ -249,7 +320,7 @@
 <!-- fullpage.js -->
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        anchors: ['homepage', 'firstpage', 'secondpage', 'thirdpage'],
+        anchors: ['homepage', 'darkmatter', 'blackboxes', 'worldsfair', 'videogames', 'fifthpage', 'attributes'],
         autoScrolling: true,
         fitToSection: true,
         slidesNavigation: true,

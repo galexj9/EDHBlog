@@ -5,7 +5,6 @@
 }
 
 .flex-container {
-    margin: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,16 +77,31 @@
 }
 
 #section6 {
-    background: #c42a53;
+    background: #5f4bc3;
     color: white;
 }
 
 #profile {
     max-width: 55%;
     max-height: 55%;
-    margin: 5%;
     border-radius: 5px;
     border: 1px solid black;
+}
+
+#color-button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#color-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 
