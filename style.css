@@ -77,7 +77,12 @@
 }
 
 #section6 {
-    background: #5f4bc3;
+    background-image: linear-gradient(0deg, #4ba5c3, #5f4bc3);
+    color: white;
+}
+
+#attributes {
+    background: #4ba5c3;
     color: white;
 }
 
