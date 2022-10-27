@@ -162,7 +162,7 @@ h6 {
 /* Create four equal columns that sits next to each other */
 .piccol {
     /* 1/4 - 1% for space for the padding*/
-    flex: 19%;
+    flex: 18%;
     max-width: 20%;
     padding: 0 4px;
 }
@@ -279,24 +279,18 @@ a.lightbox-close:after {
 
 
 /* CSS Styling per device */
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    /* Styles */
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .piccol {
+        flex: 50%;
+        width: 50%;
+    }
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    /* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-    /* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-    /* Styles */
+/* Responsive layout - one column-layout */
+@media screen and (max-width: 600px) {
+    .piccol {
+        flex: 100%;
+        width: 100%;
+    }
 }
