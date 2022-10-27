@@ -22,6 +22,10 @@ h6 {
     margin: 0px;
 }
 
+h1 {
+    text-shadow: 2px 2px black;
+}
+
 .slide {
     justify-content: center;
     align-items: center;
@@ -44,6 +48,7 @@ h6 {
     padding: 0;
     background-image: linear-gradient(-45deg, #5f4bc3, #9846ab);
     border-radius: 5px;
+    border: 2px solid antiquewhite;
     margin: 10px;
 }
 
@@ -224,7 +229,7 @@ a.lightbox-close {
     text-decoration: none;
     position: absolute;
     top: -80px;
-    right: 0;
+    right: 50px;
     transition: .5s ease-in-out;
 }
 
@@ -273,7 +278,7 @@ a.lightbox-close:after {
 }
 
 .lightbox-target:target a.lightbox-close {
-    top: 0;
+    top: 50px;
 }
 
 
