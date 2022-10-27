@@ -38,6 +38,46 @@ h6 {
     height: 98%;
 }
 
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(-45deg, #5f4bc3, #9846ab);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.navbar>li>a {
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 4px;
+}
+
+.navbar>li:hover {
+    background-color: #4ba5c3;
+}
+
+#homelink {
+    color: white;
+    background-color: #4CAF50;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+#homelink>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
 #resumeframe {
     height: 100%;
     width: 100%;
