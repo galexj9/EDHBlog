@@ -80,6 +80,7 @@ h1 {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    text-shadow: 1px 1px black;
 }
 
 
@@ -167,12 +168,12 @@ h1 {
 /* Create four equal columns that sits next to each other */
 .piccol {
     /* 1/4 - 1% for space for the padding*/
-    flex: 18%;
-    max-width: 20%;
+    flex: 15%;
     padding: 0 4px;
 }
 
 .piccol img {
+    border-radius: 5px;
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
@@ -279,6 +280,7 @@ a.lightbox-close:after {
 
 .lightbox-target:target a.lightbox-close {
     top: 50px;
+    border-radius: 5px;
 }
 
 
