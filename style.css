@@ -137,8 +137,13 @@ h1 {
     color: white;
 }
 
+#section7 {
+    background-image: linear-gradient(0deg, #2ad8c7, #4ba5c3);
+    color: white;
+}
+
 #attributesID {
-    background: #4ba5c3;
+    background: #2ad8c7;
     color: white;
 }
 
